@@ -12,6 +12,7 @@
   <style type="text/tailwindcss">
     @theme {
         --color-primary: #FFA500;
+        --color-base-500: #4F4D4D;
         --font-oswald: "Oswald", sans-serif;
       }
     </style>
@@ -43,9 +44,9 @@
       </div>
     </nav>
   </header>
-  <main class="max-w-[75rem] mx-auto">
+  <main class="max-w-[75rem] mx-auto px-4 lg:px-0">
     <!-- Hero section -->
-    <section>
+    <section class="min-h-screen">
       <div class="bg-gradient-to-b from-transparent from-20% to-primary/40 w-full min-h-screen absolute top-0 left-0 z-0">
       </div>
     
@@ -54,7 +55,7 @@
           <img src="./assets/icons/amazon.png" alt="amazon logo">
           <p>Your Full-Service <span class="text-primary">Amazon Partner</span></p>
         </div>
-        <h1 class="text-7xl text-center font-semibold leading-[80px] mb-8">Turn Your Amazon Struggles <br class="md:block hidden"> into Success—Save Time, <br class="md:block hidden"> <span class="text-primary">Maximize Profits!</span></h1>
+        <h1 class="lg:text-7xl text-5xl text-center font-semibold leading-[80px] mb-8">Turn Your Amazon Struggles <br class="md:block hidden"> into Success—Save Time, <br class="md:block hidden"> <span class="text-primary">Maximize Profits!</span></h1>
         <a href="#"
           class="bg-primary text-sm font-medium text-white px-8 py-4 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all">
           Book a Free Consultation
@@ -62,6 +63,31 @@
       </div>
       <img class="absolute left-[2.5rem] top-[302px] hidden xl:block" src="./assets/hero-stats.png" alt="stats">
       <img class="absolute right-[2.5rem] top-[302px] hidden xl:block" src="./assets/review-container.png" alt="review">
+    </section>
+
+    <section class="mb-16 w-full">
+      <h3 class="text-center mb-8 text-2xl font-semibold">Amazon Market Statistics Worldwide 2024</h3>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 w-full gap-6">
+        <div class="rounded-2xl border border-[#ECECEC] py-8 px-5">
+          <p class="font-semibold text-[40px]">600 million</p>
+          <p class="text-lg text-base-500">Amazon Offers Over Products</p>
+        </div>
+
+        <div class="rounded-2xl border border-[#ECECEC] py-8 px-5">
+          <p class="font-semibold text-[40px]">$638.0 billion</p>
+          <p class="text-lg text-base-500">Amazon Global Net Sales Revenue</p>
+        </div>
+
+        <div class="rounded-2xl border border-[#ECECEC] py-8 px-5">
+          <p class="font-semibold text-[40px]">11.95 million</p>
+          <p class="text-lg text-base-500">Amazon Handles Orders Daily.</p>
+        </div>
+
+        <div class="rounded-2xl border border-[#ECECEC] py-8 px-5">
+          <p class="font-semibold text-[40px]">$1.6 billion</p>
+          <p class="text-lg text-base-500">Amazon Average Daily Sales Revenue</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer></footer>
