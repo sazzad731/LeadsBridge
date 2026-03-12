@@ -4,21 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeadsBridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css" type="text/tailwindcss">
   <style type="text/tailwindcss">
     @theme {
         --color-primary: #FFA500;
+        --font-oswald: "Oswald", sans-serif;
       }
     </style>
-  <link rel="stylesheet" href="style.css" type="text/tailwindcss">
   <script src="https://kit.fontawesome.com/1ea26cc59f.js" crossorigin="anonymous"></script>
 </head>
-<body class="md:static relative overflow-x-hidden z-10">
-  <header>
-    <nav class="px-6 py-4 z-50">
+<body class="md:static relative overflow-x-hidden font-oswald">
+  <header class="z-50">
+    <nav class="px-6 py-4">
       <div class="max-w-[75rem] mx-auto flex items-center justify-between">
         <div>
-          <img src="./assets/logo.png" alt="logo">
+          <img src="./assets/icons/logo.png" alt="logo">
         </div>
     
         <div id="nav-items" class="flex md:flex-row flex-col items-center space-x-8 md:space-y-0 space-y-8 md:static absolute -top-96 left-0 md:shadow-none shadow-md md:py-0 py-10 z-20 transition-all duration-300 md:w-auto w-full bg-white md:bg-transparent">
@@ -39,8 +43,26 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="max-w-[75rem] mx-auto">
     <!-- Hero section -->
+    <section>
+      <div class="bg-gradient-to-b from-transparent from-20% to-primary/40 w-full min-h-screen absolute top-0 left-0 z-0">
+      </div>
+    
+      <div class="relative z-10 flex flex-col items-center justify-center w-full pt-[120px]">
+        <div class="flex items-center gap-2 mb-4">
+          <img src="./assets/icons/amazon.png" alt="amazon logo">
+          <p>Your Full-Service <span class="text-primary">Amazon Partner</span></p>
+        </div>
+        <h1 class="text-7xl text-center font-semibold leading-[80px] mb-8">Turn Your Amazon Struggles <br class="md:block hidden"> into Success—Save Time, <br class="md:block hidden"> <span class="text-primary">Maximize Profits!</span></h1>
+        <a href="#"
+          class="bg-primary text-sm font-medium text-white px-8 py-4 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all">
+          Book a Free Consultation
+        </a>
+      </div>
+      <img class="absolute left-[2.5rem] top-[302px] hidden xl:block" src="./assets/hero-stats.png" alt="stats">
+      <img class="absolute right-[2.5rem] top-[302px] hidden xl:block" src="./assets/review-container.png" alt="review">
+    </section>
   </main>
   <footer></footer>
   <script src="script.js"></script>
